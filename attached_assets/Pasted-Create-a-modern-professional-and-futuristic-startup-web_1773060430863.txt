@@ -1,0 +1,157 @@
+Create a modern, professional, and futuristic startup website for a technology company that provides digital solutions.
+
+Company Type:
+IT Services, Website Development, Software Development, Mobile Application Development, and AI Solutions Company.
+
+Design Style:
+- Modern startup UI
+- Dark theme with gradient highlights
+- Smooth animations and micro-interactions
+- Glassmorphism or futuristic UI elements
+- Fully responsive (mobile, tablet, desktop)
+- Smooth scrolling animations
+- Interactive hover effects
+
+Main Sections:
+
+1. Hero Section
+- Strong headline about building next-generation digital solutions
+- Short description of services
+- CTA buttons: “Start a Project” and “Contact Us”
+- Animated tech or AI background
+
+2. About Company
+- Brief introduction
+- Mission and Vision
+- Why choose us
+- Focus on innovation, performance, and scalable solutions
+
+3. Services Section
+Create animated service cards for:
+
+• Website Development  
+• Software Development  
+• Mobile Application Development  
+• AI Agent Development  
+• Custom Business Applications  
+• Automation Solutions  
+
+Each card should include an icon, description, and hover animation.
+
+4. Technologies We Use
+Display technology logos in a grid layout.
+
+Frontend
+- Angular
+- React JS
+
+Backend
+- Node.js
+- Express.js
+- .NET Core
+- Python
+
+Mobile
+- React Native
+
+Programming Languages
+- C#
+- JavaScript
+- Python
+
+Database
+- SQL Server
+- MongoDB
+
+Include animated icons with hover effects.
+
+5. Projects / Portfolio
+Showcase projects categorized into:
+
+Website Projects
+- Corporate websites
+- Business websites
+- E-commerce websites
+
+Software Projects
+- CRM systems
+- ERP systems
+- Custom business software
+
+Mobile Applications
+- Business apps
+- Delivery apps
+- Service booking apps
+
+AI Projects
+- AI chatbots
+- AI agents
+- Automation systems
+
+Each project card should have image preview, short description, and technology tags.
+
+6. Clients Section
+Show logos or names of companies that have worked with us.
+
+Include:
+- Client logo grid
+- Trusted by businesses worldwide message
+- Carousel slider animation for client logos
+
+Example clients categories:
+- Startups
+- Local Businesses
+- Enterprises
+- E-commerce companies
+
+7. Development Process
+Step-by-step animated workflow:
+
+1. Requirement Analysis  
+2. UI/UX Design  
+3. Development  
+4. Testing & Quality Assurance  
+5. Deployment  
+6. Maintenance & Support  
+
+8. Why Choose Us
+Highlight benefits such as:
+- Experienced Developers
+- Modern Technology Stack
+- Fast Delivery
+- Scalable Solutions
+- Affordable Pricing
+
+9. Testimonials
+Client reviews with sliding animation.
+
+10. Pricing Plans
+Three pricing packages:
+- Basic
+- Professional
+- Enterprise
+
+11. Contact Section
+Include:
+- Contact form
+- Email
+- Phone
+- Location
+- Social media links
+
+12. Footer
+- Company information
+- Services links
+- Technologies
+- Quick links
+- Copyright notice
+
+Animations:
+- Smooth scroll animations
+- Hover effects
+- Animated gradient backgrounds
+- Section reveal animations
+- Micro-interactions on buttons
+
+Goal:
+Create a high-end modern tech startup website similar to leading IT companies that clearly explains services, technologies, projects, and clients  while building trust and generating leads.
