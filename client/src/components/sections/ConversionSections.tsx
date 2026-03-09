@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { GlassCard, SectionHeading, GlowingButton } from "../ui/DesignSystem";
-import { Star, ArrowRight } from "lucide-react";
+import { Star, ArrowRight, CheckCircle2 } from "lucide-react";
 
 export function PortfolioSection() {
   const projects = [
