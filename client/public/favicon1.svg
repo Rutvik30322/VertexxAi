@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#061B2E" />
+  
+  <!-- Right Arm (Dark Outer Face) -->
+  <polygon points="362,160 412,160 256,420" fill="#13759E" />
+  
+  <!-- Right Arm (Bright Inner Bevel) -->
+  <polygon points="332,160 362,160 256,420 256,330" fill="#3FEBF8" />
+  
+  <!-- Left Arm (Bright Face) -->
+  <polygon points="100,160 180,160 256,330 256,420" fill="#3FEBF8" />
+</svg>

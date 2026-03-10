@@ -46,7 +46,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-white font-bold">Office</h4>
-                    <p className="text-muted-foreground text-sm">100 Innovation Drive<br/>San Francisco, CA 94105</p>
+                    <p className="text-muted-foreground text-sm">Vadodara,<br/>Gujarat</p>
                   </div>
                 </div>
                 
@@ -56,7 +56,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-white font-bold">Email</h4>
-                    <p className="text-muted-foreground text-sm">hello@nexusdynamics.ai</p>
+                    <p className="text-muted-foreground text-sm">vertexxai@gmail.com</p>
                   </div>
                 </div>
                 
@@ -66,7 +66,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-white font-bold">Phone</h4>
-                    <p className="text-muted-foreground text-sm">+1 (555) 123-4567</p>
+                    <p className="text-muted-foreground text-sm">+91 7041261633</p>
                   </div>
                 </div>
               </div>

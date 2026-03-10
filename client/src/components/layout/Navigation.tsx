@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Command, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { name: "Services", href: "#services" },
   { name: "Portfolio", href: "#portfolio" },
   { name: "Process", href: "#process" },
-  { name: "Pricing", href: "#pricing" },
+  { name: "Clients", href: "#clients" },
 ];
 
 export function Navbar() {
@@ -20,13 +20,14 @@ export function Navbar() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-background/80 backdrop-blur-md border-b border-white/10 py-4" : "bg-transparent py-6"}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-background/90 backdrop-blur-xl border-b border-white/[0.08] py-3" : "bg-transparent py-5"}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        <a href="#hero" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white shadow-[0_0_15px_rgba(124,58,237,0.5)] group-hover:shadow-[0_0_25px_rgba(6,182,212,0.6)] transition-all">
-            <Command size={20} />
-          </div>
-          <span className="font-display font-bold text-xl tracking-wide text-white">NEXUS<span className="text-primary">.ai</span></span>
+        <a href="#hero" className="flex items-center group overflow-visible">
+          <img
+            src="/vertexxai-logo.png"
+            alt="VertexxAI"
+            className="h-32 md:h-40 w-auto object-contain scale-[1.4] md:scale-[1.6] origin-left"
+          />
         </a>
 
         {/* Desktop Nav */}
@@ -36,7 +37,10 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          <a href="#contact" className="text-sm font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/10 px-5 py-2.5 rounded-full transition-all flex items-center gap-2">
+          <a
+            href="#contact"
+            className="text-sm font-bold text-white bg-gradient-to-r from-secondary to-amber-500 hover:opacity-90 px-5 py-2.5 rounded-full transition-all flex items-center gap-2 shadow-[0_0_18px_hsl(38_95%_55%_/_0.3)] hover:shadow-[0_0_25px_hsl(38_95%_55%_/_0.5)]"
+          >
             Get Started <ArrowRight size={16} />
           </a>
         </nav>
@@ -88,11 +92,12 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
-             <a href="#hero" className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white">
-                <Command size={16} />
-              </div>
-              <span className="font-display font-bold text-xl text-white">NEXUS<span className="text-primary">.ai</span></span>
+            <a href="#hero" className="flex items-center mb-6 overflow-visible">
+              <img
+                src="/vertexxai-logo.png"
+                alt="VertexxAI"
+                className="h-32 w-auto object-contain scale-[1.3] origin-left"
+              />
             </a>
             <p className="text-muted-foreground max-w-sm">
               Pioneering the future of digital experiences through artificial intelligence, scalable architecture, and breathtaking design.
@@ -117,7 +122,7 @@ export function Footer() {
           </div>
         </div>
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-muted-foreground text-sm">© 2024 Nexus Dynamics Inc. All rights reserved.</p>
+          <p className="text-muted-foreground text-sm">© 2025 VertexxAI. All rights reserved.</p>
           <div className="flex gap-4">
             {['Twitter', 'LinkedIn', 'GitHub', 'Instagram'].map(social => (
               <a key={social} href="#" className="text-muted-foreground hover:text-white text-sm font-medium transition-colors">
