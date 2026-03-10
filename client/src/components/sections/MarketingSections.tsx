@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import { GlassCard, SectionHeading, GlowingButton } from "../ui/DesignSystem";
-import { Code2, Rocket, Cpu, Layers, ShieldCheck, Zap, Server, Globe, Smartphone, CheckCircle2 } from "lucide-react";
+import { Code2, Rocket, Cpu, Layers, ShieldCheck, Zap, Server, Globe, Smartphone, CheckCircle2, Award } from "lucide-react";
 import { Canvas } from "@react-three/fiber";
 import { Stars, Float, Icosahedron, Sparkles } from "@react-three/drei";
 
 export function HeroSection() {
   const metrics = [
-    { icon: "✦", label: "Client Satisfaction", value: "98%", color: "from-blue-500/20 to-indigo-500/20", border: "border-blue-500/30", text: "text-blue-300" },
-    { icon: "⚡", label: "Faster Delivery", value: "2×", color: "from-amber-500/20 to-orange-500/20", border: "border-amber-500/30", text: "text-amber-300" },
-    { icon: "🛡", label: "Uptime SLA", value: "99.9%", color: "from-cyan-500/20 to-teal-500/20", border: "border-cyan-500/30", text: "text-cyan-300" },
-    { icon: "🌍", label: "Global Clients", value: "50+", color: "from-violet-500/20 to-purple-500/20", border: "border-violet-500/30", text: "text-violet-300" },
+    { icon: <Award className="w-5 h-5" />, label: "Client Satisfaction", value: "98%", color: "from-blue-500/20 to-indigo-500/20", border: "border-blue-500/30", text: "text-blue-300" },
+    { icon: <Zap className="w-5 h-5" />, label: "Faster Delivery", value: "2×", color: "from-amber-500/20 to-orange-500/20", border: "border-amber-500/30", text: "text-amber-300" },
+    { icon: <ShieldCheck className="w-5 h-5" />, label: "Uptime SLA", value: "99.9%", color: "from-cyan-500/20 to-teal-500/20", border: "border-cyan-500/30", text: "text-cyan-300" },
+    { icon: <Globe className="w-5 h-5" />, label: "Global Clients", value: "50+", color: "from-violet-500/20 to-purple-500/20", border: "border-violet-500/30", text: "text-violet-300" },
   ];
 
   const stats = [
@@ -181,43 +181,23 @@ export function HeroSection() {
                 ))}
               </div>
 
-              {/* Progress bars */}
-              <div className="space-y-3">
-                {[
-                  { label: "Code Quality Score", pct: 97, color: "bg-blue-500" },
-                  { label: "On-Time Delivery Rate", pct: 94, color: "bg-amber-500" },
-                  { label: "Client Retention", pct: 98, color: "bg-cyan-500" },
-                ].map((bar, i) => (
-                  <div key={i}>
-                    <div className="flex justify-between text-xs mb-1.5">
-                      <span className="text-white/60 font-medium">{bar.label}</span>
-                      <span className="text-white font-bold">{bar.pct}%</span>
-                    </div>
-                    <div className="h-1.5 bg-white/[0.06] rounded-full overflow-hidden">
-                      <motion.div
-                        className={`h-full ${bar.color} rounded-full`}
-                        initial={{ width: 0 }}
-                        animate={{ width: `${bar.pct}%` }}
-                        transition={{ delay: 0.8 + i * 0.15, duration: 0.9, ease: "easeOut" }}
-                      />
+              {/* Image of dashboard replacing progress bars for a premium look */}
+              <div className="relative rounded-2xl overflow-hidden mt-2 border border-white/10 group shadow-2xl">
+                <div className="absolute inset-0 bg-primary/20 blur-[50px] -z-10 group-hover:bg-primary/30 transition-colors duration-700" />
+                <img src="/hero-dashboard.png" alt="Project Dashboard Overview" className="w-full h-auto object-cover transform group-hover:scale-[1.03] transition-transform duration-700 mix-blend-screen opacity-90" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent pointer-events-none" />
+                <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                  <div>
+                    <div className="text-white font-bold font-display text-base mb-0.5 shadow-sm">Real-time Analytics</div>
+                    <div className="text-emerald-400 text-xs font-semibold bg-black/50 px-2 py-1 rounded w-max backdrop-blur-md border border-emerald-500/30 flex items-center gap-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+                      Live Feed
                     </div>
                   </div>
-                ))}
-              </div>
-
-              {/* Footer row */}
-              <div className="mt-6 pt-5 border-t border-white/[0.07] flex items-center justify-between">
-                <div className="flex -space-x-2">
-                  {["FF", "HA", "ST", "QL"].map((init, i) => (
-                    <div
-                      key={i}
-                      className="w-7 h-7 rounded-full bg-gradient-to-br from-primary/60 to-accent/60 border-2 border-background flex items-center justify-center text-[9px] font-bold text-white"
-                    >
-                      {init}
-                    </div>
-                  ))}
+                  <div className="w-8 h-8 rounded-full bg-primary/30 border border-primary/50 flex items-center justify-center backdrop-blur-md">
+                     <Zap size={14} className="text-white animate-pulse" />
+                  </div>
                 </div>
-                <span className="text-xs text-muted-foreground">+46 active clients</span>
               </div>
             </div>
 
