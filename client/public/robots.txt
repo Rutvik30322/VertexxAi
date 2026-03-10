@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.vertexxai.com/sitemap.xml
+Sitemap: https://www.vertexxai.in/sitemap.xml
