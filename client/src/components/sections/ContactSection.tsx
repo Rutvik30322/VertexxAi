@@ -56,7 +56,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-white font-bold">Email</h4>
-                    <p className="text-muted-foreground text-sm">vertexxai@gmail.com</p>
+                    <p className="text-muted-foreground text-sm">makrutvik3@gmail.com</p>
                   </div>
                 </div>
                 
