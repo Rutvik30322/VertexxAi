@@ -5,28 +5,34 @@ import { Star, ArrowRight, CheckCircle2 } from "lucide-react";
 export function PortfolioSection() {
   const projects = [
     { 
-      title: "Nova Commerce", 
-      cat: "E-Commerce Mobile App & Website", 
+      title: "Asnani HR Solutions", 
+      cat: "HR & Recruitment Website", 
+      image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=500&fit=crop",
+      desc: "A sophisticated recruitment platform streamlining Gulf-region hiring pipelines with smart candidate management and employer workflows." 
+    },
+    { 
+      title: "E-Commerce Platform", 
+      cat: "E-Commerce Mobile App", 
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop",
-      desc: "High-conversion headless e-commerce architecture with a seamless mobile shopping experience." 
+      desc: "High-conversion mobile-first e-commerce experience with seamless checkout, real-time inventory, and personalized product discovery." 
     },
     { 
-      title: "Motilal Oswal Trading Suite", 
-      cat: "Trading Mobile App & Software", 
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=500&fit=crop",
-      desc: "Enterprise-grade real-time trading dashboard and robust mobile application for top-tier investors." 
+      title: "E-Commerce Mobile App", 
+      cat: "Mobile App", 
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop",
+      desc: "A sleek, high-performance mobile shopping app with real-time inventory, smooth checkout flows, and personalized product discovery." 
     },
     { 
-      title: "Hisab Manager", 
-      cat: "Finance & Accounting App", 
-      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=500&fit=crop",
-      desc: "Comprehensive accounting and book-keeping software tailored for businesses." 
+      title: "E-Commerce Software", 
+      cat: "Desktop Software Platform", 
+      image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=500&fit=crop",
+      desc: "A powerful backend software platform for managing orders, analytics, vendors, and store operations at scale." 
     },
     { 
-      title: "Commercial Site Manager", 
-      cat: "Site & Builds Management", 
+      title: "Vardik Industries", 
+      cat: "Corporate Website & Digital Presence", 
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=500&fit=crop",
-      desc: "End-to-end management platform for organizing commercial sites and managing builds." 
+      desc: "A premium digital presence built for Vardik's decentralized life-support infrastructure, projecting trust and global reach." 
     },
   ];
 
@@ -117,6 +123,15 @@ export function ClientsSection() {
       quote: "Transformed our Gulf recruitment pipelines with a sophisticated tailored platform.",
     },
     {
+      name: "E-Commerce Platform",
+      industry: "Retail & E-Commerce",
+      logo: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=100&h=100&fit=crop",
+      fallbackInitial: "EC",
+      color: "from-rose-500/30 to-pink-500/30",
+      accent: "#fb7185",
+      quote: "Our omnichannel mobile and software conversion rates skyrocketed since implementing their solution.",
+    },
+    {
       name: "Vardik Industries",
       industry: "Life-Support",
       logo: "https://www.vardik.com/favicon.png",
@@ -124,42 +139,6 @@ export function ClientsSection() {
       color: "from-emerald-500/30 to-teal-500/30",
       accent: "#34d399",
       quote: "Built an exceptional digital presence for our decentralized infrastructure systems.",
-    },
-    {
-      name: "Motilal Oswal",
-      industry: "FinTech & Trading",
-      logo: "https://img.logo.dev/motilaloswal.com?token=pk_X3Wpqjf3QHKkMsbEmfHlnQ&retina=true",
-      fallbackInitial: "MO",
-      color: "from-orange-500/30 to-amber-500/30",
-      accent: "#fb923c",
-      quote: "Our new high-frequency trading software handles peak load without breaking a sweat.",
-    },
-    {
-      name: "Hisab Manager",
-      industry: "FinTech Software",
-      logo: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=100&h=100&fit=crop",
-      fallbackInitial: "HM",
-      color: "from-purple-500/30 to-violet-500/30",
-      accent: "#a78bfa",
-      quote: "A flawless management experience for our commercial operations and daily accounts.",
-    },
-    {
-      name: "E-Commerce Max",
-      industry: "Retail SaaS",
-      logo: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=100&h=100&fit=crop",
-      fallbackInitial: "EC",
-      color: "from-rose-500/30 to-pink-500/30",
-      accent: "#fb7185",
-      quote: "Our omnichannel mobile conversion rates skyrocketed since implementing their app solution.",
-    },
-    {
-      name: "CityBuild Manage",
-      industry: "Commercial Software",
-      logo: "https://images.unsplash.com/photo-1504307651254-35680f356f27?w=100&h=100&fit=crop",
-      fallbackInitial: "CB",
-      color: "from-indigo-500/30 to-sky-500/30",
-      accent: "#818cf8",
-      quote: "Seamlessly managing our commercial sites, ongoing construction builds, and team tasks.",
     },
   ];
 
