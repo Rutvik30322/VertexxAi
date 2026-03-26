@@ -124,9 +124,18 @@ export function Footer() {
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">© 2025 VertexxAI. All rights reserved.</p>
           <div className="flex gap-4">
-            {['Twitter', 'LinkedIn', 'GitHub', 'Instagram'].map(social => (
-              <a key={social} href="#" className="text-muted-foreground hover:text-white text-sm font-medium transition-colors">
-                {social}
+            {[
+              { name: 'LinkedIn', href: 'https://www.linkedin.com/company/vertexx-ai/', target: '_blank' },
+              { name: 'Instagram', href: 'https://www.instagram.com/vertexx_ai?igsh=dzF5ejN0dmZ0OWZ4&utm_source=qr', target: '_blank' }
+            ].map(social => (
+              <a 
+                key={social.name} 
+                href={social.href}
+                target={social.target}
+                rel={social.target === '_blank' ? "noopener noreferrer" : undefined}
+                className="text-muted-foreground hover:text-white text-sm font-medium transition-colors"
+              >
+                {social.name}
               </a>
             ))}
           </div>
